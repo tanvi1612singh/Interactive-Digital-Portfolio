@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Contact - Tanvi Singh</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tanvi Singh</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="theme-switcher">
+                    <button class="theme-toggle" id="themeToggle">
+                        <span id="themeIcon">🌙</span>
+                        <span id="themeName">Dark</span>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="light">☀️ Light</button>
+                        <button class="theme-option" data-theme="dark">🌙 Dark</button>
+                        <button class="theme-option" data-theme="neon">⚡ Neon</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Get In Touch</h1>
+        <p>Ready to collaborate? Let's connect and discuss how we can work together on your next project.</p>
+    </section>
+
+    <!-- Contact Container -->
+    <section class="contact-container">
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or how I can help you..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        
+        <!-- Contact Info -->
+        <div class="contact-info" style="margin-top: 3rem; text-align: center;">
+            <h3>Other Ways to Connect</h3>
+            <div class="contact-methods" style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
+                <div class="contact-method">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📧</div>
+                    <p>Email: tanvisingh123@gmail.com</p>
+                </div>
+                <div class="contact-method">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">💼</div>
+                    <p>LinkedIn: /in/tanvi-singh</p>
+                </div>
+                <div class="contact-method">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🐙</div>
+                    <p>GitHub: /tanvi-singh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot">
+        <button class="chatbot-toggle" id="chatbotToggle">💬</button>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h4>Chat with Tanvi's Assistant</h4>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages"></div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Ask me anything...">
+                <button id="chatbotSend">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./js/main.js"></script>
+    <script src="./js/gsap-animations.js"></script>
+    <script src="./js/scrollmagic.js"></script>
+</body>
+
+</html>

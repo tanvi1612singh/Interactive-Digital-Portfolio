@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Projects - Tanvi Singh</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tanvi Singh</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="theme-switcher">
+                    <button class="theme-toggle" id="themeToggle">
+                        <span id="themeIcon">🌙</span>
+                        <span id="themeName">Dark</span>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="light">☀️ Light</button>
+                        <button class="theme-option" data-theme="dark">🌙 Dark</button>
+                        <button class="theme-option" data-theme="neon">⚡ Neon</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>My Projects</h1>
+        <p>Discover my latest projects, from web applications to innovative solutions that solve real-world problems.</p>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        <a href="project1.html" class="project-card">
+            <div class="project-image">🛒</div>
+            <div class="project-content">
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-description">A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.</p>
+                <div class="project-tags">
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">MongoDB</span>
+                    <span class="project-tag">Stripe</span>
+                </div>
+            </div>
+        </a>
+
+        <div class="project-card">
+            <div class="project-image">📊</div>
+            <div class="project-content">
+                <h3 class="project-title">Data Visualization Dashboard</h3>
+                <p class="project-description">Interactive dashboard for data analysis and visualization using D3.js and React. Real-time data updates and customizable charts.</p>
+                <div class="project-tags">
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">D3.js</span>
+                    <span class="project-tag">WebSocket</span>
+                    <span class="project-tag">Python</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">🎵</div>
+            <div class="project-content">
+                <h3 class="project-title">Music Streaming App</h3>
+                <p class="project-description">Spotify-like music streaming application with playlist management, search functionality, and social features.</p>
+                <div class="project-tags">
+                    <span class="project-tag">React Native</span>
+                    <span class="project-tag">Express.js</span>
+                    <span class="project-tag">PostgreSQL</span>
+                    <span class="project-tag">AWS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">🏠</div>
+            <div class="project-content">
+                <h3 class="project-title">Smart Home IoT System</h3>
+                <p class="project-description">IoT-based home automation system with web interface for controlling lights, temperature, and security devices.</p>
+                <div class="project-tags">
+                    <span class="project-tag">IoT</span>
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">MQTT</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">💬</div>
+            <div class="project-content">
+                <h3 class="project-title">Real-time Chat Application</h3>
+                <p class="project-description">Multi-room chat application with real-time messaging, file sharing, and video calling capabilities.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Socket.io</span>
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">WebRTC</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">🎮</div>
+            <div class="project-content">
+                <h3 class="project-title">Browser-based Game</h3>
+                <p class="project-description">Multiplayer puzzle game built with HTML5 Canvas and WebSocket for real-time gameplay and leaderboards.</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML5 Canvas</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">WebSocket</span>
+                    <span class="project-tag">Node.js</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">📱</div>
+            <div class="project-content">
+                <h3 class="project-title">Task Management PWA</h3>
+                <p class="project-description">Progressive Web App for task and project management with offline functionality and push notifications.</p>
+                <div class="project-tags">
+                    <span class="project-tag">PWA</span>
+                    <span class="project-tag">Service Worker</span>
+                    <span class="project-tag">IndexedDB</span>
+                    <span class="project-tag">Vue.js</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">🤖</div>
+            <div class="project-content">
+                <h3 class="project-title">AI Chatbot Platform</h3>
+                <p class="project-description">Intelligent chatbot platform with natural language processing and machine learning capabilities for customer support.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">NLP</span>
+                    <span class="project-tag">TensorFlow</span>
+                    <span class="project-tag">Flask</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/gsap-animations.js"></script>
+    <script src="./js/scrollmagic.js"></script>
+</body>
+
+</html>

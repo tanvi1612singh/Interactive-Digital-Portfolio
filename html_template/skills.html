@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Skills - Tanvi Singh</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tanvi Singh</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="theme-switcher">
+                    <button class="theme-toggle" id="themeToggle">
+                        <span id="themeIcon">🌙</span>
+                        <span id="themeName">Dark</span>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="light">☀️ Light</button>
+                        <button class="theme-option" data-theme="dark">🌙 Dark</button>
+                        <button class="theme-option" data-theme="neon">⚡ Neon</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Skills & Expertise</h1>
+        <p>Explore my technical skills through an interactive galaxy of technologies and frameworks I work with.</p>
+    </section>
+
+    <!-- Skills Container -->
+    <section class="skills-container">
+        <!-- Interactive Skills Galaxy -->
+        <div class="skills-galaxy">
+            <div class="skill-planet" data-skill="JavaScript">JavaScript</div>
+            <div class="skill-planet" data-skill="React">React</div>
+            <div class="skill-planet" data-skill="Node.js">Node.js</div>
+            <div class="skill-planet" data-skill="MongoDB">MongoDB</div>
+            <div class="skill-planet" data-skill="Python">Python</div>
+            <div class="skill-planet" data-skill="CSS">CSS</div>
+            <div class="skill-planet" data-skill="HTML">HTML</div>
+            <div class="skill-planet" data-skill="Git">Git</div>
+        </div>
+
+        <!-- Skill Details -->
+        <div class="skill-details">
+            <h3>Click on a skill planet to learn more</h3>
+            <p>Each planet represents a technology or framework in my skillset. Click on any planet to see detailed information about my experience and proficiency level.</p>
+        </div>
+
+        <!-- Skills Progress Bars -->
+        <div class="skills-progress">
+            <h2>Proficiency Levels</h2>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="90"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">HTML/CSS</span>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="95"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">React</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="85"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Node.js</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="80"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">MongoDB</span>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="75"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="70"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Git/Version Control</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="85"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/gsap-animations.js"></script>
+    <script src="./js/scrollmagic.js"></script>
+</body>
+
+</html>

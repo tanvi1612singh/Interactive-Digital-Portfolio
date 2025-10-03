@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Dashboard - Tanvi Singh</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tanvi Singh</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="theme-switcher">
+                    <button class="theme-toggle" id="themeToggle">
+                        <span id="themeIcon">🌙</span>
+                        <span id="themeName">Dark</span>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="light">☀️ Light</button>
+                        <button class="theme-option" data-theme="dark">🌙 Dark</button>
+                        <button class="theme-option" data-theme="neon">⚡ Neon</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Personal Dashboard</h1>
+        <p>View live statistics, current projects, and real-time insights into my development activities.</p>
+    </section>
+
+    <!-- Dashboard Grid -->
+    <section class="dashboard-grid">
+        <!-- Live Clock Widget -->
+        <div class="dashboard-widget">
+            <div class="widget-icon">🕐</div>
+            <div class="widget-title">Current Time</div>
+            <div class="widget-value" id="liveClock">00:00:00</div>
+            <div class="widget-description" id="liveDate">Loading...</div>
+        </div>
+
+        <!-- Projects Counter -->
+        <div class="dashboard-widget">
+            <div class="widget-icon">💼</div>
+            <div class="widget-title">Completed Projects</div>
+            <div class="widget-value counter" data-target="47">0</div>
+            <div class="widget-description">Professional & Personal</div>
+        </div>
+
+        <!-- Code Lines Counter -->
+        <div class="dashboard-widget">
+            <div class="widget-icon">💻</div>
+            <div class="widget-title">Lines of Code</div>
+            <div class="widget-value counter" data-target="125000">0</div>
+            <div class="widget-description">This Year</div>
+        </div>
+
+        <!-- GitHub Commits -->
+        <div class="dashboard-widget">
+            <div class="widget-icon">🔄</div>
+            <div class="widget-title">GitHub Commits</div>
+            <div class="widget-value counter" data-target="892">0</div>
+            <div class="widget-description">This Year</div>
+        </div>
+
+        <!-- Coffee Counter -->
+        <div class="dashboard-widget">
+            <div class="widget-icon">☕</div>
+            <div class="widget-title">Coffee Consumed</div>
+            <div class="widget-value counter" data-target="1247">0</div>
+            <div class="widget-description">Cups This Year</div>
+        </div>
+
+        <!-- Experience Years -->
+        <div class="dashboard-widget">
+            <div class="widget-icon">📈</div>
+            <div class="widget-title">Years of Experience</div>
+            <div class="widget-value counter" data-target="5">0</div>
+            <div class="widget-description">Professional Development</div>
+        </div>
+
+        <!-- Technologies Mastered -->
+        <div class="dashboard-widget">
+            <div class="widget-icon">🚀</div>
+            <div class="widget-title">Technologies</div>
+            <div class="widget-value counter" data-target="23">0</div>
+            <div class="widget-description">Languages & Frameworks</div>
+        </div>
+
+        <!-- Random Quote Widget -->
+        <div class="dashboard-widget" style="grid-column: span 2;">
+            <div class="widget-icon">💡</div>
+            <div class="widget-title">Daily Inspiration</div>
+            <div class="widget-description" id="randomQuote" style="font-size: 1.1rem; font-style: italic; color: var(--text-primary);">
+                "Code is poetry written in logic."
+            </div>
+        </div>
+
+        <!-- Current Status -->
+        <div class="dashboard-widget">
+            <div class="widget-icon">🎯</div>
+            <div class="widget-title">Current Status</div>
+            <div class="widget-value" style="font-size: 1.2rem;">Available</div>
+            <div class="widget-description">Open for new opportunities</div>
+        </div>
+
+        <!-- Latest Achievement -->
+        <div class="dashboard-widget">
+            <div class="widget-icon">🏆</div>
+            <div class="widget-title">Latest Achievement</div>
+            <div class="widget-value" style="font-size: 1rem;">AWS Certified</div>
+            <div class="widget-description">Developer Associate (2023)</div>
+        </div>
+
+        <!-- Learning Progress -->
+        <div class="dashboard-widget" style="grid-column: span 2;">
+            <div class="widget-icon">📚</div>
+            <div class="widget-title">Currently Learning</div>
+            <div style="margin-top: 1rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Machine Learning</span>
+                    <span>75%</span>
+                </div>
+                <div style="background: var(--bg-tertiary); height: 8px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: var(--gradient-primary); height: 100%; width: 75%; border-radius: 4px;"></div>
+                </div>
+            </div>
+            <div style="margin-top: 1rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>TypeScript Advanced</span>
+                    <span>60%</span>
+                </div>
+                <div style="background: var(--bg-tertiary); height: 8px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: var(--gradient-secondary); height: 100%; width: 60%; border-radius: 4px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/gsap-animations.js"></script>
+    <script src="./js/scrollmagic.js"></script>
+</body>
+
+</html>

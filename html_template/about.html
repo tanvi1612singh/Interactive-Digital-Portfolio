@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>About - Tanvi Singh</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tanvi Singh</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="theme-switcher">
+                    <button class="theme-toggle" id="themeToggle">
+                        <span id="themeIcon">🌙</span>
+                        <span id="themeName">Dark</span>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="light">☀️ Light</button>
+                        <button class="theme-option" data-theme="dark">🌙 Dark</button>
+                        <button class="theme-option" data-theme="neon">⚡ Neon</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>About Me</h1>
+        <p>Get to know the person behind the code - my journey, passions, and what drives me to create innovative solutions.</p>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <!-- Centered Introduction -->
+            <div class="about-intro-centered">
+                <h2>Hello, I'm Tanvi Singh</h2>
+                <p>A passionate full-stack developer with a love for creating beautiful, functional, and user-friendly digital experiences. My journey in technology began with curiosity and has evolved into a career dedicated to solving complex problems through innovative solutions.</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-title">Senior Full-Stack Developer</div>
+                        <div class="timeline-description">Leading development of scalable web applications using React, Node.js, and modern cloud technologies. Mentoring junior developers and architecting robust solutions for complex business requirements.</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2024</div>
+                        <div class="timeline-title">Full-Stack Developer</div>
+                        <div class="timeline-description">Developed and maintained multiple web applications using JavaScript, React, and Node.js. Collaborated with cross-functional teams to deliver high-quality products on time and within budget.</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <div class="timeline-title">Frontend Developer</div>
+                        <div class="timeline-description">Specialized in creating responsive and interactive user interfaces using modern frontend technologies. Focused on performance optimization and user experience enhancement.</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2021</div>
+                        <div class="timeline-title">Junior Web Developer</div>
+                        <div class="timeline-description">Started my professional journey in web development, learning industry best practices and contributing to various projects while building a strong foundation in programming.</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2020</div>
+                        <div class="timeline-title">Computer Science Studies</div>
+                        <div class="timeline-description">Completed my degree in Computer Science with a focus on software engineering and web technologies. Participated in coding competitions and open-source projects.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Values Cards Section -->
+    <section class="personal-values">
+        <div class="container">
+            <h2 class="section-title">What Drives Me</h2>
+            <div class="values-grid">
+                <div class="value-card" data-value="mission">
+                    <div class="card-icon">🎯</div>
+                    <h3>Mission</h3>
+                    <p>To create innovative digital solutions that make a positive impact on people's lives while continuously learning and growing in the ever-evolving world of technology.</p>
+                </div>
+                
+                <div class="value-card" data-value="philosophy">
+                    <div class="card-icon">💡</div>
+                    <h3>Philosophy</h3>
+                    <p>I believe in writing clean, maintainable code and creating user experiences that are not just functional, but delightful. Every project is an opportunity to learn something new.</p>
+                </div>
+                
+                <div class="value-card" data-value="goals">
+                    <div class="card-icon">🚀</div>
+                    <h3>Goals</h3>
+                    <p>To become a technology leader who bridges the gap between complex technical solutions and real-world business needs, while mentoring the next generation of developers.</p>
+                </div>
+                
+                <div class="value-card" data-value="interests">
+                    <div class="card-icon">🎨</div>
+                    <h3>Interests</h3>
+                    <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, reading tech blogs, and experimenting with creative coding projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/gsap-animations.js"></script>
+    <script src="./js/scrollmagic.js"></script>
+</body>
+
+</html>
