@@ -1,6 +1,6 @@
-// Simplified scroll effects using GSAP only (ScrollMagic replacement)
+// Scroll effects using GSAP  
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all scroll effects using GSAP ScrollTrigger
+   
     initScrollEffects();
     initParallaxEffects();
     initRevealEffects();

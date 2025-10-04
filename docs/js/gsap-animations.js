@@ -1,9 +1,9 @@
 // GSAP Animations for Interactive Portfolio
 document.addEventListener('DOMContentLoaded', function() {
-    // Register GSAP plugins
+    
     gsap.registerPlugin(ScrollTrigger);
     
-    // Initialize all animations
+   
     initHeroAnimations();
     initPageAnimations();
     initTimelineAnimations();
@@ -25,11 +25,11 @@ function initHeroAnimations() {
     const floatingElements = document.querySelectorAll('.floating-element');
     const scrollIndicator = document.querySelector('.scroll-indicator');
     
-    // Create timeline for hero animations
+    
     const tl = gsap.timeline({ delay: 0.3 });
     
     if (heroTitle) {
-        // Animate title lines
+        
         const titleLines = heroTitle.querySelectorAll('.title-line');
         tl.fromTo(titleLines, 
             { 
@@ -81,7 +81,7 @@ function initHeroAnimations() {
             '-=0.8'
         );
         
-        // Continuous floating animation
+        
         floatingElements.forEach((element, index) => {
             gsap.to(element, {
                 y: -20,
@@ -164,7 +164,7 @@ function initTimelineAnimations() {
             }
         );
         
-        // Animate timeline marker
+        
         const marker = item.querySelector('.timeline-marker');
         if (marker) {
             gsap.fromTo(marker,
@@ -183,7 +183,7 @@ function initTimelineAnimations() {
             );
         }
         
-        // Animate tags
+        
         const tags = item.querySelectorAll('.tag');
         if (tags.length > 0) {
             gsap.fromTo(tags,
@@ -425,7 +425,7 @@ function initDashboardAnimations() {
 
 // Scroll-based animations
 function initScrollAnimations() {
-    // Parallax effect for hero background
+    
     gsap.to('.hero', {
         backgroundPosition: '50% 100%',
         ease: 'none',
@@ -465,7 +465,7 @@ function initScrollAnimations() {
 
 // Hover effects and micro-interactions
 function initHoverEffects() {
-    // Button hover effects
+    
     const buttons = document.querySelectorAll('.btn');
     
     buttons.forEach(btn => {
@@ -667,7 +667,7 @@ function hideLoadingAnimation(element) {
     gsap.set(element, { rotation: 0 });
 }
 
-// Export functions for use in other files
+// Export functions
 window.gsapAnimations = {
     animatePageOut,
     animatePageIn,

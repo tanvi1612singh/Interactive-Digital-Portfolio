@@ -159,7 +159,7 @@ class SkillsGalaxy {
         
         // Add click handlers to all planets
         this.planets.forEach((planet, index) => {
-            // Ensure each planet has proper event handling
+           
             planet.style.cursor = 'pointer';
             planet.style.userSelect = 'none';
             
@@ -297,11 +297,11 @@ class ValueCardsAnimator {
     init() {
         if (this.valueCards.length === 0) return;
         
-        // Set up intersection observer for scroll animations
+        //Intersection observer for scroll animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    // Stagger the animation
+                    
                     setTimeout(() => {
                         gsap.to(entry.target, {
                             opacity: 1,
@@ -322,7 +322,7 @@ class ValueCardsAnimator {
             rootMargin: '0px 0px -50px 0px'
         });
         
-        // Observe all value cards
+        
         this.valueCards.forEach(card => {
             observer.observe(card);
         });
